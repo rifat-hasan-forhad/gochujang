@@ -21,7 +21,7 @@ nav {
   background-color: #111111;
   color: #ffffff;
   width: 100%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.541);
   cursor: pointer;
   position: absolute;
 }
@@ -195,3 +195,87 @@ marquee {
 }
 
 /* slider section style ends */
+
+/* page-2 style start */
+
+#page-2 {
+  display: flex;
+  width: 100%;
+  /* height: 55vh; */
+  gap: 9vw;
+  background-color: #111111;
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.288);
+  padding: 0 6.8vw;
+}
+
+#page-2 #left-side-p2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+  height: 80vh;
+}
+
+#left-side-p2 p {
+  padding: 2vw;
+  font-size: 1vw;
+  color: #ffffffe0;
+}
+
+#left-side-p2 h5 {
+  padding: 2vw;
+  font-size: 1.2vw;
+  font-weight: 300;
+  color: #ffffffe0;
+}
+
+#page-2 #right-side-p2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#page-2 #right-side-p2 .p2-right-elem {
+  border-top: 1px solid rgba(255, 255, 255, 0.267);
+  padding: 1vw 0 5vw 0;
+  font-size: 1vw;
+  transition: 0.2s ease;
+}
+
+#page-2 #right-side-p2 .p2-right-elem:hover {
+  border-top: 1.8px solid rgba(255, 255, 255, 0.858);
+}
+
+.p2-right-elem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p2-right-elem h2 {
+  font-weight: 400;
+  color: #ffffffd4;
+}
+
+.p2-right-elem div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.p2-right-elem span {
+  color: #ffffffd4;
+}
+
+.p2-right-elem p {
+  color: gray;
+}
+
+.p2-img {
+  height: 6vw;
+  width: 6vw;
+  border-radius: 50%;
+  object-fit: cover;
+  position: fixed;
+  transition: 0.1s ease;
+  /* opacity: 0; */
+}
