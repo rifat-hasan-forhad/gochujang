@@ -73,16 +73,20 @@ const page2Anim = () => {
 
 page2Anim();
 
-const playBtn = document.querySelector("#play-btn");
-const video = document.querySelector("#page-3 video");
+const page3Anim = () => {
+  const playBtn = document.querySelector("#play-btn");
+  const video = document.querySelector("#page-3 video");
 
-playBtn.addEventListener("click", () => {
-  video.play();
-  video.style.transform = "scaleX(1) scaleY(1)";
-  video.style.opacity = 1;
-});
-video.addEventListener("click", () => {
-  video.pause();
-  video.style.transform = "scaleX(0.7) scaleY(0)";
-  video.style.opacity = 0;
-});
+  playBtn.addEventListener("click", () => {
+    video.play();
+    video.style.transform = "scaleX(1) scaleY(1)";
+    video.style.opacity = 1;
+  });
+  video.addEventListener("click", () => {
+    video.pause();
+    video.style.transform = "scaleX(0.7) scaleY(0)";
+    video.style.opacity = 0;
+  });
+};
+
+page3Anim();

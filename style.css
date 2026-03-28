@@ -337,10 +337,114 @@ marquee {
   width: 100%;
   position: absolute;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 20px;
   transform: scaleX(0.7) scaleY(0);
   opacity: 0;
+  transition: 0.3s ease-in-out;
   z-index: 99999;
 }
 
 /* page-3 style ends */
+
+/* page-4 style start */
+
+#page-4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6.8vw;
+}
+
+#left-side-p4 {
+  text-transform: capitalize;
+  width: 25%;
+  padding: 3rem 0;
+  color: #111111;
+  font-weight: 600;
+}
+
+#right-side-p4 {
+  width: 55%;
+  padding: 2rem;
+}
+
+#right-side-p4 h4 {
+  text-transform: uppercase;
+  color: rgba(128, 128, 128, 0.872);
+  font-size: 0.9vw;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#right-side-p4 p {
+  text-transform: capitalize;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  line-height: 1.8vw;
+  font-weight: 500;
+  color: #111111dc;
+}
+
+/* page-4 style ends */
+
+/* page-5 style start */
+
+#page-5 {
+  display: flex;
+  padding: 0 6.8vw;
+  column-gap: 0.6rem;
+  row-gap: 0.6rem;
+  flex-wrap: wrap;
+  padding-bottom: 6.8vw;
+}
+
+.p5-elem {
+  width: 32.7%;
+  background-color: #f5f5f5;
+  padding: 1rem 1.5rem 1.1rem 1.5rem;
+}
+
+.p5-elem h1 {
+  padding: 1rem 0;
+  font-size: 4vw;
+  font-weight: 350;
+  color: #111111;
+}
+
+.p5-elem p {
+  font-size: 0.9rem;
+  color: #675d5d;
+  font-weight: 500;
+  margin-bottom: 5.5rem;
+}
+
+.p5-elem span {
+  font-size: 0.8rem;
+  color: rgba(128, 128, 128, 0.742);
+}
+
+/* page-5 style ends */
+
+/* page-6 style start */
+
+#page-6 {
+  padding: 0 6.8vw;
+  padding-bottom: 6.8vw;
+}
+
+#p6-elem {
+  width: 100%;
+  padding-left: 23vw;
+}
+
+#p6-small {
+  float: left;
+  font-size: 0.7rem;
+  padding: 0 8rem 1rem 0;
+}
+
+#p6-big {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+/* page-6 style ends */
