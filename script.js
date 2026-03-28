@@ -90,3 +90,41 @@ const page3Anim = () => {
 };
 
 page3Anim();
+
+const page7Anim = () => {
+  const p7Video1 = document.querySelector("#p7-em1 video");
+  const p7Video2 = document.querySelector("#p7-em2 video");
+  const circle = document.querySelector(".circle");
+
+  p7Video1.addEventListener("mouseenter", () => {
+    p7Video1.play();
+  });
+
+  p7Video1.addEventListener("mousemove", (e) => {
+    circle.style.opacity = 1;
+    circle.style.left = e.x + "px";
+    circle.style.top = e.y + "px";
+  });
+
+  p7Video1.addEventListener("mouseleave", () => {
+    p7Video1.pause();
+    circle.style.opacity = 0;
+  });
+
+  p7Video2.addEventListener("mouseenter", () => {
+    p7Video2.play();
+  });
+
+  p7Video2.addEventListener("mousemove", (e) => {
+    circle.style.opacity = 1;
+    circle.style.left = e.x + "px";
+    circle.style.top = e.y + "px";
+  });
+
+  p7Video2.addEventListener("mouseleave", () => {
+    p7Video2.pause();
+    circle.style.opacity = 0;
+  });
+};
+
+page7Anim();

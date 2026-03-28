@@ -12,6 +12,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 /* nav style start */
@@ -448,3 +449,83 @@ marquee {
 }
 
 /* page-6 style ends */
+
+/* page-7 style start */
+
+#page-7 {
+  padding: 0 6.8vw;
+  padding-bottom: 6.8vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.p7-elem {
+  display: flex;
+  gap: 2rem;
+}
+
+.p7-left {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  transition: 0.1s ease;
+}
+
+.p7-left:hover {
+  border-top: 1.5px solid grey;
+}
+
+.p7-left h2 {
+  padding-top: 1.5rem;
+  font-weight: 400;
+}
+
+.p7-right {
+  width: 72%;
+}
+
+.p7-right video {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  height: 70vh;
+}
+
+.p7-left h2 span {
+  color: #555454;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.circle {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #4866f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  transition: 0.1s ease;
+}
+
+.circle i {
+  padding-top: 0.8rem;
+  padding-left: 4rem;
+  color: #eae9e9;
+  font-size: 0.7rem;
+}
+
+.circle span {
+  text-transform: uppercase;
+  color: #ebe9e9;
+  font-size: 0.6rem;
+  padding-bottom: 1.2rem;
+  padding-left: 0.7rem;
+  font-weight: 500;
+}
+
+/* page-7 style ends */
