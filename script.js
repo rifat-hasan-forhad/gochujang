@@ -128,3 +128,42 @@ const page7Anim = () => {
 };
 
 page7Anim();
+
+const page8Anim = () => {
+  const p8Video1 = document.querySelector("#p8-v1");
+  const p8Video2 = document.querySelector("#p8-v2");
+  const p8Para1 = document.querySelector("#p8-p1");
+  const p8Para2 = document.querySelector("#p8-p2");
+  const p8H3_1 = document.querySelector("#p8-h3-1");
+  const p8H3_2 = document.querySelector("#p8-h3-2");
+
+  p8Video1.addEventListener("mouseenter", () => {
+    p8Para1.style.display = "none";
+    p8Video1.play();
+    p8H3_1.style.marginBottom = "2rem";
+    p8Video1.style.height = "70vh";
+  });
+
+  p8Video1.addEventListener("mouseleave", () => {
+    p8Para1.style.display = "block";
+    p8Video1.pause();
+    p8H3_1.style.marginBottom = "4.5rem";
+    p8Video1.style.height = "40vh";
+  });
+
+  p8Video2.addEventListener("mouseenter", () => {
+    p8Para2.style.display = "none";
+    p8Video2.play();
+    p8H3_2.style.marginBottom = "2rem";
+    p8Video2.style.height = "70vh";
+  });
+
+  p8Video2.addEventListener("mouseleave", () => {
+    p8Para2.style.display = "block";
+    p8Video2.pause();
+    p8H3_2.style.marginBottom = "4.5rem";
+    p8Video2.style.height = "40vh";
+  });
+};
+
+page8Anim();

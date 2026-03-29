@@ -529,3 +529,54 @@ marquee {
 }
 
 /* page-7 style ends */
+
+/* page-8 style start */
+
+#page-8 {
+  padding: 0 6.8vw;
+  padding-bottom: 6.8vw;
+}
+
+.p8-elems {
+  display: flex;
+  width: 100%;
+  padding-left: 24vw;
+  gap: 2.5rem;
+}
+
+.p8-elem {
+  border-top: 1px solid rgba(175, 172, 172, 0.559);
+  transition: 0.5s ease;
+}
+
+.p8-elem h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  margin-bottom: 4.5rem;
+  transition: 0.5s ease;
+}
+
+.p8-elem p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  padding-bottom: 2rem;
+  color: #101010b5;
+  font-weight: 450;
+  transition: 0.5s ease;
+}
+
+.p8-elem span {
+  font-size: 0.9rem;
+  padding-left: 0.8rem;
+}
+
+.p8-elem video {
+  width: 29vw;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+/* page-8 style ends */
