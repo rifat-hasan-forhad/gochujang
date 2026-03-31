@@ -691,6 +691,27 @@ summary::marker {
   justify-content: space-between;
   border-top: 1px solid #333;
   margin-top: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.blur {
+  height: 20vh;
+  width: 60.5vw;
+  background-color: #33333388;
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.details-content:hover {
+  padding: 0 0.7rem;
+}
+
+.details-content:hover .blur {
+  opacity: 1;
+  position: absolute;
+  right: 1px;
 }
 
 .details-content h4 {
