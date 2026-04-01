@@ -173,14 +173,14 @@ const page13Anim = () => {
   let lists = document.querySelectorAll(".p13-list ul li");
 
   page13.addEventListener("mouseenter", () => {
-    lists[1].style.transform = "translateX(10%)";
-    lists[2].style.transform = "translateX(20%)";
-    lists[3].style.transform = "translateX(30%)";
-    lists[4].style.transform = "translateX(40%)";
-    lists[5].style.transform = "translateX(50%)";
-    lists[7].style.transform = "translateX(15%)";
-    lists[9].style.transform = "translateX(15%)";
-    lists[10].style.transform = "translateX(30%)";
+    lists[1].style.transform = "translateX(15%)";
+    lists[2].style.transform = "translateX(30%)";
+    lists[3].style.transform = "translateX(45%)";
+    lists[4].style.transform = "translateX(60%)";
+    lists[5].style.transform = "translateX(75%)";
+    lists[7].style.transform = "translateX(20%)";
+    lists[9].style.transform = "translateX(20%)";
+    lists[10].style.transform = "translateX(40%)";
   });
 
   page13.addEventListener("mouseleave", () => {
