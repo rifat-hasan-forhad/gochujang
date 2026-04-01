@@ -167,3 +167,32 @@ const page8Anim = () => {
 };
 
 page8Anim();
+
+const page13Anim = () => {
+  const page13 = document.querySelector("#page-13");
+  let lists = document.querySelectorAll(".p13-list ul li");
+
+  page13.addEventListener("mouseenter", () => {
+    lists[1].style.transform = "translateX(10%)";
+    lists[2].style.transform = "translateX(20%)";
+    lists[3].style.transform = "translateX(30%)";
+    lists[4].style.transform = "translateX(40%)";
+    lists[5].style.transform = "translateX(50%)";
+    lists[7].style.transform = "translateX(15%)";
+    lists[9].style.transform = "translateX(15%)";
+    lists[10].style.transform = "translateX(30%)";
+  });
+
+  page13.addEventListener("mouseleave", () => {
+    lists[1].style.transform = "translateX(0%)";
+    lists[2].style.transform = "translateX(0%)";
+    lists[3].style.transform = "translateX(0%)";
+    lists[4].style.transform = "translateX(0%)";
+    lists[5].style.transform = "translateX(0%)";
+    lists[7].style.transform = "translateX(0%)";
+    lists[9].style.transform = "translateX(0%)";
+    lists[10].style.transform = "translateX(0%)";
+  });
+};
+
+page13Anim();
