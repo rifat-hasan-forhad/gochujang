@@ -698,7 +698,7 @@ summary::marker {
 .blur {
   height: 20vh;
   width: 60.5vw;
-  background-color: #33333388;
+  background-color: #22222297;
   position: absolute;
   opacity: 0;
   transition: 0.2s ease-in-out;
@@ -706,6 +706,7 @@ summary::marker {
 
 .details-content:hover {
   padding: 0 0.7rem;
+  border-top: 1.5px solid gray;
 }
 
 .details-content:hover .blur {
@@ -735,3 +736,116 @@ summary::marker {
 }
 
 /* page-10 style ends */
+
+/* page-11 style ends */
+
+#page-11 {
+  padding: 0 6.8vw;
+  padding-top: 2rem;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+#p11-heading {
+  text-align: center;
+}
+
+#p11-heading h5 {
+  color: rgb(212, 210, 210);
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+#p11-heading p {
+  padding: 0 10rem;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-bottom: 3.5rem;
+  line-height: 1.8rem;
+}
+
+#page-11-elems {
+  display: flex;
+  column-gap: 0.6rem;
+  row-gap: 0.6rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.p11-elem {
+  width: 32.7%;
+  background-color: #222;
+  padding: 1rem 1.5rem 1.1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.5rem;
+}
+
+.p11-elem:hover span {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.p11-elem h3 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 350;
+  color: #dbd9d9;
+  font-size: 1.4rem;
+}
+
+.p11-elem p {
+  font-size: 0.8rem;
+  color: #675d5d;
+  font-weight: 300;
+  color: #dbd9d9;
+}
+
+.p11-elem span {
+  font-size: 0.8rem;
+  color: #dbd9d9;
+  transition: 0.2s ease;
+}
+
+.circle-2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #489f56;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: auto;
+}
+
+.circle-2:hover i {
+  padding-top: 1rem;
+  padding-left: 4.2rem;
+}
+
+.circle-2:hover span {
+  padding-bottom: 1.2rem;
+  padding-left: 0.8rem;
+}
+
+.circle-2 i {
+  padding-top: 0.8rem;
+  padding-left: 4.5rem;
+  color: #eae9e9;
+  font-size: 0.7rem;
+  transition: 0.2s ease;
+}
+
+.circle-2 span {
+  text-transform: uppercase;
+  color: #ebe9e9;
+  font-size: 0.6rem;
+  padding-bottom: 0.9rem;
+  padding-left: 1rem;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+/* page-11 style ends */
