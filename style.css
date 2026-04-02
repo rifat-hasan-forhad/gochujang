@@ -1095,3 +1095,63 @@ summary::marker {
 }
 
 /* page-15 style ends */
+
+/* footer style start */
+
+#services {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 0 6.8vw;
+  border-top: 1px solid #333;
+}
+
+#services h4 {
+  color: gray;
+  text-transform: uppercase;
+  padding-block: 1.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.colums {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.colum ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-right: 4rem;
+  letter-spacing: -1px;
+}
+
+.colum ul li:hover {
+  color: #489f56;
+}
+
+.last-footer {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 1rem 6.8vw;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.branding {
+  width: 65%;
+  text-transform: uppercase;
+  color: #489f56;
+  font-size: 1.5rem;
+}
+
+.copy-right {
+  width: 30%;
+  display: flex;
+  letter-spacing: -1px;
+  justify-content: space-between;
+}
+
+/* footer style ends */
