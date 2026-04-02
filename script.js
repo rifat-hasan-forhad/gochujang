@@ -196,3 +196,109 @@ const page13Anim = () => {
 };
 
 page13Anim();
+
+const page15Anim = () => {
+  let FaqBtn = document.querySelectorAll(".faq-btn");
+  let Answer = document.querySelectorAll(".answer");
+  let p15Elem = document.querySelectorAll(".p15-elem");
+  let FQ = document.querySelectorAll(".fq");
+
+  let click = 0;
+
+  p15Elem[0].addEventListener("click", () => {
+    click++;
+    if (click % 2 !== 0) {
+      Answer[0].style.display = "block";
+      FaqBtn[0].innerHTML = `<i class="fa-solid fa-angle-up"></i
+              >`;
+      p15Elem[0].style.borderTop = "1.5px solid #dfdfdf";
+      FQ[0].style.color = "white";
+      FQ[0].style.fontWeight = "550";
+    } else {
+      Answer[0].style.display = "none";
+      FaqBtn[0].innerHTML = `<i class="fa-solid fa-angle-down"></i
+              >`;
+      p15Elem[0].style.borderTop = "1px solid #333";
+      FQ[0].style.color = "rgb(164, 164, 164)";
+      FQ[0].style.fontWeight = "400";
+    }
+  });
+
+  p15Elem[1].addEventListener("click", () => {
+    click++;
+    if (click % 2 !== 0) {
+      Answer[1].style.display = "block";
+      FaqBtn[1].innerHTML = `<i class="fa-solid fa-angle-up"></i
+              >`;
+      p15Elem[1].style.borderTop = "1.5px solid #dfdfdf";
+      FQ[1].style.color = "white";
+      FQ[1].style.fontWeight = "550";
+    } else {
+      Answer[1].style.display = "none";
+      FaqBtn[1].innerHTML = `<i class="fa-solid fa-angle-down"></i
+              >`;
+      p15Elem[1].style.borderTop = "1px solid #333";
+      FQ[1].style.color = "rgb(164, 164, 164)";
+      FQ[1].style.fontWeight = "400";
+    }
+  });
+
+  p15Elem[2].addEventListener("click", () => {
+    click++;
+    if (click % 2 !== 0) {
+      Answer[2].style.display = "block";
+      FaqBtn[2].innerHTML = `<i class="fa-solid fa-angle-up"></i
+              >`;
+      p15Elem[2].style.borderTop = "1.5px solid #dfdfdf";
+      FQ[2].style.color = "white";
+      FQ[2].style.fontWeight = "550";
+    } else {
+      Answer[2].style.display = "none";
+      FaqBtn[2].innerHTML = `<i class="fa-solid fa-angle-down"></i
+              >`;
+      p15Elem[2].style.borderTop = "1px solid #333";
+      FQ[2].style.color = "rgb(164, 164, 164)";
+      FQ[2].style.fontWeight = "400";
+    }
+  });
+
+  p15Elem[3].addEventListener("click", () => {
+    click++;
+    if (click % 2 !== 0) {
+      Answer[3].style.display = "block";
+      FaqBtn[3].innerHTML = `<i class="fa-solid fa-angle-up"></i
+              >`;
+      p15Elem[3].style.borderTop = "1.5px solid #dfdfdf";
+      FQ[3].style.color = "white";
+      FQ[3].style.fontWeight = "550";
+    } else {
+      Answer[3].style.display = "none";
+      FaqBtn[3].innerHTML = `<i class="fa-solid fa-angle-down"></i
+              >`;
+      p15Elem[3].style.borderTop = "1px solid #333";
+      FQ[3].style.color = "rgb(164, 164, 164)";
+      FQ[3].style.fontWeight = "400";
+    }
+  });
+
+  p15Elem[4].addEventListener("click", () => {
+    click++;
+    if (click % 2 !== 0) {
+      Answer[4].style.display = "block";
+      FaqBtn[4].innerHTML = `<i class="fa-solid fa-angle-up"></i
+              >`;
+      p15Elem[4].style.borderTop = "1.5px solid #dfdfdf";
+      FQ[4].style.color = "white";
+      FQ[4].style.fontWeight = "550";
+    } else {
+      Answer[4].style.display = "none";
+      FaqBtn[4].innerHTML = `<i class="fa-solid fa-angle-down"></i
+              >`;
+      p15Elem[4].style.borderTop = "1px solid #333";
+      FQ[4].style.color = "rgb(164, 164, 164)";
+      FQ[4].style.fontWeight = "400";
+    }
+  });
+};
+
+page15Anim();

@@ -969,10 +969,6 @@ summary::marker {
   gap: 4.5rem;
 }
 
-#p14-left {
-  position: sticky;
-}
-
 #p14-left h5 {
   text-transform: uppercase;
   font-weight: 450;
@@ -994,7 +990,7 @@ summary::marker {
 #p14-right {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3.5rem;
 }
 
 .client-says h6 {
@@ -1005,7 +1001,7 @@ summary::marker {
 
 .client-says p {
   font-size: 1rem;
-  padding-bottom: 2.6rem;
+  padding-bottom: 1.7rem;
   color: rgb(236, 236, 236);
   line-height: 1.3rem;
 }
@@ -1015,8 +1011,8 @@ summary::marker {
 }
 
 .client-details img {
-  height: 85px;
-  width: 85px;
+  height: 65px;
+  width: 65px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -1029,6 +1025,73 @@ summary::marker {
 .client-name {
   display: flex;
   flex-direction: column;
+  padding: 2.2rem 0 0 0.6rem;
+  gap: 0.5rem;
+}
+
+.client-name h5 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.client-name p {
+  font-size: 0.8rem;
 }
 
 /* page-14 style ends */
+
+/* page-15 style start */
+
+#p15-heading {
+  background-color: #111111;
+  color: #ffffff;
+  display: flex;
+  height: 30vh;
+  width: 100%;
+}
+
+#p15-heading h1 {
+  font-size: 6.5vw;
+  padding-block: 1.5rem;
+  padding-left: 30vw;
+  font-weight: 550;
+  line-height: 4rem;
+}
+
+.p15-elems {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 0 6.8vw;
+}
+
+.p15-elem {
+  border-top: 1px solid #333;
+  padding-top: 1.3rem;
+  padding-bottom: 3.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(164, 164, 164);
+}
+
+.faq-question h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.faq-btn i {
+  transition: 1s ease-in-out;
+}
+
+.answer {
+  padding: 3.5rem 16rem 3.5rem 16rem;
+  color: rgb(239, 239, 239);
+  display: none;
+  transition: 2s ease;
+}
+
+/* page-15 style ends */
