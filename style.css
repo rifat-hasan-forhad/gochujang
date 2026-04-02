@@ -286,7 +286,7 @@ marquee {
 /* page-3 style start */
 
 #page-3 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-image: url(images\ &\ videos/page3-banner.png);
   object-fit: cover;
@@ -1155,3 +1155,272 @@ summary::marker {
 }
 
 /* footer style ends */
+
+/* --- FINAL FULL RESPONSIVE CSS --- */
+
+@media (max-width: 768px) {
+  /* 1. Global Reset for Mobile */
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    overflow-x: hidden; /* Prevents side-scrolling */
+    height: auto;
+  }
+
+  /* 2. Navigation Fixes (JS-Compatible) */
+  nav {
+    position: relative !important; /* Prevents hero section from sliding under nav */
+    height: auto !important;
+    padding-bottom: 10px;
+  }
+
+  .n-1 {
+    padding: 15px 5vw;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+  }
+
+  #nav1 {
+    font-size: 6vw;
+  }
+
+  /* Your mobileSupport() JS targets #nav4 for the menu */
+  #nav4 {
+    display: none;
+    flex-direction: column;
+    padding: 20px 5vw;
+    background: #111;
+    width: 100%;
+    gap: 10px !important;
+  }
+
+  #nav4 h5 {
+    font-size: 4.5vw !important;
+    margin: 0;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+    width: 100%;
+  }
+
+  #nav2,
+  #nav3 {
+    display: none; /* Hide desktop links and green button for clean mobile UI */
+  }
+
+  /* 3. Hero Section - Fixes vertical stretching */
+  #hero-section {
+    padding: 20vw 5vw 10vw 5vw;
+    height: auto;
+  }
+
+  #hero-section h1 {
+    font-size: 13vw;
+    line-height: 1.1;
+    font-weight: 800;
+  }
+
+  #hero-section .part-1 svg {
+    height: 12vw;
+    width: 12vw;
+  }
+
+  #hero-section .part-2 {
+    font-size: 4.5vw;
+    line-height: 1.5;
+    margin-top: 25px;
+    padding: 0 5vw;
+  }
+
+  /* 4. Marquee/Slider */
+  marquee {
+    width: 95%;
+    margin-bottom: 15vw;
+  }
+
+  .slider-section .left,
+  .slider-section .right {
+    display: none; /* Remove gradients that glitch on mobile */
+  }
+
+  /* 5. Page 2 - About (Stacked Layout) */
+  #page-2 {
+    flex-direction: column;
+    padding: 12vw 5vw;
+    gap: 5vw;
+    height: auto !important;
+  }
+
+  #page-2 #left-side-p2,
+  #page-2 #right-side-p2 {
+    width: 100%;
+    height: auto;
+  }
+
+  #left-side-p2 p,
+  #left-side-p2 h5 {
+    font-size: 5vw;
+    padding: 10px 0;
+  }
+
+  .p2-right-elem {
+    padding: 30px 0 !important;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .p2-right-elem h2 {
+    font-size: 7vw;
+  }
+
+  .p2-img {
+    display: none !important; /* JS mousemove images break touch experience */
+  }
+
+  /* 6. Page 5 - Statistics Grid */
+  #page-5 {
+    flex-direction: column;
+    padding: 5vw;
+  }
+
+  .p5-elem {
+    width: 100% !important;
+    margin-bottom: 15px;
+    padding: 40px 25px;
+  }
+
+  .p5-elem h1 {
+    font-size: 14vw;
+  }
+
+  .p5-elem p {
+    margin-bottom: 1.5rem;
+    font-size: 4vw;
+  }
+
+  /* 7. Page 7 & 8 - Video Layouts */
+  .p7-elem,
+  .p8-elems {
+    flex-direction: column;
+    padding-left: 0 !important;
+    gap: 35px;
+  }
+
+  .p7-left,
+  .p7-right,
+  .p8-elem {
+    width: 100% !important;
+  }
+
+  .p7-right video,
+  .p8-elem video {
+    height: 45vh !important;
+    width: 100% !important;
+    object-fit: cover;
+  }
+
+  .circle {
+    display: none !important; /* Remove custom cursor for touch */
+  }
+
+  /* 8. Page 10, 13, 14 - Content Sections */
+  #page-10,
+  #page-13,
+  #page-14 {
+    flex-direction: column;
+    padding: 15vw 5vw;
+    gap: 30px;
+  }
+
+  #p-10-left,
+  #p-10-right,
+  #p-13-left,
+  #p-13-right,
+  #p14-left,
+  #p14-right {
+    width: 100% !important;
+  }
+
+  #page-10 button,
+  #page-13 button {
+    position: relative !important;
+    top: 0;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 15px;
+  }
+
+  #p-13-right #para {
+    padding: 0 !important;
+  }
+
+  #p13-lists {
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .p13-list {
+    border-left: none !important;
+    border-top: 1px solid gray;
+    padding-top: 15px;
+  }
+
+  /* 9. FAQ Page 15 (JS Click Compatible) */
+  #p15-heading h1 {
+    font-size: 11vw;
+    padding-left: 5vw;
+    line-height: 1.1;
+  }
+
+  .p15-elem {
+    padding-top: 20px;
+    padding-bottom: 20px !important;
+  }
+
+  .faq-question h4 {
+    font-size: 5vw;
+    width: 80%;
+  }
+
+  .answer {
+    padding: 20px 0 !important;
+    font-size: 4.2vw;
+    line-height: 1.6;
+  }
+
+  /* 10. Footer */
+  #services {
+    padding: 10vw 5vw;
+  }
+
+  .colums {
+    flex-direction: column;
+  }
+
+  .colum {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .last-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    padding: 40px 5vw;
+  }
+
+  .branding,
+  .copy-right {
+    width: 100% !important;
+    justify-content: center;
+    font-size: 5vw;
+  }
+}
+
+/* --- END OF CODE --- */
