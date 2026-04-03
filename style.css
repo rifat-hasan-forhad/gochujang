@@ -1219,21 +1219,27 @@ summary::marker {
   }
 
   #hero-section h1 {
-    font-size: 13vw;
+    font-size: 9vw;
     line-height: 1.1;
     font-weight: 800;
   }
 
   #hero-section .part-1 svg {
-    height: 12vw;
-    width: 12vw;
+    height: 7.2vw;
+    width: 7.2vw;
   }
 
   #hero-section .part-2 {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     line-height: 1.5;
     margin-top: 25px;
     padding: 0 5vw;
+  }
+
+  #hero-section .part-2-extra div,
+  #hero-section .part-2-extra span {
+    font-size: 0.6rem;
+    padding: 5px;
   }
 
   /* 4. Marquee/Slider */
@@ -1275,11 +1281,35 @@ summary::marker {
   }
 
   .p2-right-elem h2 {
-    font-size: 7vw;
+    font-size: 4vw;
   }
 
   .p2-img {
     display: none !important; /* JS mousemove images break touch experience */
+  }
+
+  #page-3 {
+    height: 50vh;
+  }
+
+  #page-4 {
+    flex-direction: column;
+  }
+
+  #left-side-p4 {
+    width: 100%;
+  }
+
+  #right-side-p4 {
+    width: 100%;
+  }
+
+  #right-side-p4 h4 {
+    font-size: 0.6rem;
+  }
+
+  #right-side-p4 p {
+    line-height: 1rem;
   }
 
   /* 6. Page 5 - Statistics Grid */
@@ -1295,12 +1325,16 @@ summary::marker {
   }
 
   .p5-elem h1 {
-    font-size: 14vw;
+    font-size: 10vw;
   }
 
   .p5-elem p {
     margin-bottom: 1.5rem;
-    font-size: 4vw;
+    font-size: 3vw;
+  }
+
+  #p6-elem {
+    padding-left: 0;
   }
 
   /* 7. Page 7 & 8 - Video Layouts */
@@ -1326,6 +1360,35 @@ summary::marker {
 
   .circle {
     display: none !important; /* Remove custom cursor for touch */
+  }
+
+  #p11-heading p {
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  #page-11-elems {
+    flex-basis: 300px;
+  }
+
+  .p11-elem {
+    width: 100%;
+  }
+
+  #page-12 {
+    height: 20vh;
+  }
+
+  #page-12 h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  #page-9 {
+    height: 20vh;
+  }
+
+  #page-9 h1 {
+    font-size: 1.5rem;
   }
 
   /* 8. Page 10, 13, 14 - Content Sections */
@@ -1355,6 +1418,10 @@ summary::marker {
     padding: 15px;
   }
 
+  .details-content .blur {
+    display: none;
+  }
+
   #p-13-right #para {
     padding: 0 !important;
   }
@@ -1372,10 +1439,15 @@ summary::marker {
   }
 
   /* 9. FAQ Page 15 (JS Click Compatible) */
+  #p15-heading {
+    height: 15vh;
+  }
+
   #p15-heading h1 {
     font-size: 11vw;
     padding-left: 5vw;
     line-height: 1.1;
+    padding-block: 1rem;
   }
 
   .p15-elem {
@@ -1384,13 +1456,13 @@ summary::marker {
   }
 
   .faq-question h4 {
-    font-size: 5vw;
+    font-size: 3vw;
     width: 80%;
   }
 
   .answer {
     padding: 20px 0 !important;
-    font-size: 4.2vw;
+    font-size: 3.5vw;
     line-height: 1.6;
   }
 
@@ -1419,7 +1491,11 @@ summary::marker {
   .copy-right {
     width: 100% !important;
     justify-content: center;
-    font-size: 5vw;
+    font-size: 4vw;
+  }
+
+  .copy-right {
+    gap: 1rem;
   }
 }
 
